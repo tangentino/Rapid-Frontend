@@ -16,9 +16,16 @@
 }
 #email-box {
     width: 500px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
     height: 30px;
-    
 }
+
+#email-box:valid {
+    box-shadow: 0 0 0 2pt #c8e1ff;
+    border-color: #9fcdff;
+}
+
 #subscribe-button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -28,12 +35,14 @@
     color: white;
     background-color: #27a745;
     border-radius: 5px;
-    border-style: initial;
+    border-style: none;
 }
 #subscribe-button:hover {
     box-shadow: 0 0 0 2pt #9dd4a9;
 }
-
+#subscribe-button:focus, #email-box:focus {
+    outline: none;
+}
 #thanks-header {
     font-family: Arial, Helvetica, sans-serif;
     color: #226031;
