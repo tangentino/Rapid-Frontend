@@ -4,17 +4,25 @@
         <meta charset="utf-8">
         <title>Subscribe Now!</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
     </head>
     <body id="content"\>
-        <div class=card>
+        <div id="success" class=thanks-card style="display: none">
+            <div class=green-card>
+                <h1 id="thanks-header">Thank you</h1>
+                <p class="thanks-text">
+                Your subscription was a success!
+                </p>
+            </div>
+        </div>
+        <div id="main-div" class=card>
             <h1 id="main-header">Subscribe Now!</h1>
             <p class="main-text">
                 Email address
             </p>
-            <form action="subscribe.html">
-                <input type="email" id="email-box" name="email" required><br><br>
-                <input type="submit" id="subscribe-button" value="Subscribe">
-            </form>
+            <input type="email" id="email-box" name="email" required oninput="validateEmail()">
+            <p id="error-message"></p>
+            <button type="button" id="subscribe-button" onclick="submit()">Subscribe</button>
         </div>
     </body>
 </html>
