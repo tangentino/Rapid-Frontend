@@ -1,13 +1,13 @@
-#main-header {
+* {
     font-family: Arial, Helvetica, sans-serif;
+}
+#main-header {
     font-size: 26px;
     line-height: 24px;
     text-align: left;
     margin-bottom: 30px;
 }
-.main-text {
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 .card {
     width: 520px;
     padding: 15px;
@@ -19,15 +19,16 @@
     border: 1px solid #aaa;
     border-radius: 5px;
     height: 30px;
+    margin-bottom: 10px;
 }
 
-#email-box:valid {
+#email-box:focus {
+    outline: none;
     box-shadow: 0 0 0 2pt #c8e1ff;
     border-color: #9fcdff;
 }
 
 #subscribe-button {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     width: 100px;
     height: 35px;
@@ -39,19 +40,19 @@
 }
 #subscribe-button:hover {
     box-shadow: 0 0 0 2pt #9dd4a9;
+    cursor: pointer;
 }
-#subscribe-button:focus, #email-box:focus {
+#subscribe-button:focus {
     outline: none;
 }
+
 #thanks-header {
-    font-family: Arial, Helvetica, sans-serif;
     color: #226031;
     font-size: 26px;
     line-height: 10px;
     text-align: left;
 }
 .thanks-text {
-    font-family: Arial, Helvetica, sans-serif;
     color: #226031;
 }
 .thanks-card {
@@ -68,4 +69,9 @@
     border-radius: 10px;
     background-color: #d4edda;
     border-color: #c6e7ce;
+}
+
+#error-message {
+    color: red;
+    margin-top: 1px;
 }
