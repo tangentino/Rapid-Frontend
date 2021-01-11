@@ -19,7 +19,6 @@
     border: 1px solid #aaa;
     border-radius: 5px;
     height: 30px;
-    margin-bottom: 10px;
 }
 
 #email-box:focus {
@@ -72,6 +71,7 @@
 }
 
 #error-message {
+    font-size: 14px;
     color: red;
-    margin-top: 1px;
+    margin-top: 5px;
 }
