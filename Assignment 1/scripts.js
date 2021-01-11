@@ -1,9 +1,4 @@
-document.getElementById("email-box").addEventListener("focusout",validateEmail);
-
-document.getElementById("email-box").addEventListener("input",validateEmail);
-
-function validateEmail(event) {
-    event.preventDefault();
+function validateEmail() {
     var email = document.getElementById("email-box");
     var error;
     if (email.checkValidity()) {
