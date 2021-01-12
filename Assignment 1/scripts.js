@@ -19,11 +19,11 @@ function validateEmail() {
 }
 
 function submit() {
-    var email = document.getElementById("email-box");
     var mainPage = document.getElementById("main-div");
     var successPage = document.getElementById("success");
-    if (email.checkValidity()) {
+    if (valid) {
         mainPage.style.display = "none";
         successPage.style.display = "block";
     }
 }
+
